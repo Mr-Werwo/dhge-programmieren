@@ -6,30 +6,56 @@
 // Klaus Kusche, 2010
 
 #include <stdio.h>
+#include <stdlib.h>
 // Was steht in der Angabe zu atoi, was an dieser Stelle zu beachten ist?
 
 int main(int argc, const char *argv[])
 {
-  // hat der Aufrufer überhaupt genau zwei Zahlen angegeben?
+  int zahl2 = 0;
+  int zahl1 = 0;
+  int result = 1;
+
+  if (argc > 3) {
+    printf("bitte zwei zahlen mit angeben");
+    return EXIT_FAILURE;
+  }
+
+  zahl1 = atoi(argv[1]);
+  zahl2 = atoi(argv[2]);
+
+  if (zahl2 && zahl1)
+
+  if (zahl2 == 0) {
+    printf("0 hoch x = 0");
+    return EXIT_FAILURE;
+  }
+
+  for (int i = 1; i <= zahl2; ++i) {
+    result *= zahl1;
+  }
+
+  printf("%d hoch %d = %d\n", zahl1, zahl2, result);
+  return EXIT_SUCCESS;
+  // hat der Aufrufer ï¿½berhaupt genau zwei Zahlen angegeben?
   // (damit argv[1] und argv[2] nicht "ins Leere greift")
 
-    // Wenn nein: Fehlermeldung ausgeben, mit Fehlercode aufhören
+    // Wenn nein: Fehlermeldung ausgeben, mit Fehlercode aufhï¿½ren
 
   // argv[1] und argv[2] in Zahlen verwandeln
-  // und in zwei dafür angelegten Variablen speichern
+  // und in zwei dafï¿½r angelegten Variablen speichern
 
-  // jetzt sollten wir noch prüfen,
+  // jetzt sollten wir noch prï¿½fen,
   // ob wir es mit mathematisch sinnvollen Eingaben zu tun haben:
-  // Bei ganzzahliger Rechnung können wir nur Exponenten >= 0 berechnen
-  // Sonst: Fehlermeldung, aufhören!
+  // Bei ganzzahliger Rechnung kï¿½nnen wir nur Exponenten >= 0 berechnen
+  // Sonst: Fehlermeldung, aufhï¿½ren!
   // (und "0 hoch 0" sollte auch ausgeschlossen werden, aber das sparen wir uns)
 
-  // Wir brauchen eine Variable für das Ergebnis
+  // Wir brauchen eine Variable fï¿½r das Ergebnis
   // im Ergebnis speichern wir als Anfangswert einmal 1,
-  // damit wir weiter unten etwas dazumultiplizieren können
+  // damit wir weiter unten etwas dazumultiplizieren kï¿½nnen
 
   // und dann kommt eine Schleife,
-  // die von 1 bis zur zweiten Eingabe (einschließlich) zählt
+  // die von 1 bis zur zweiten Eingabe (einschlieï¿½lich) zï¿½hlt
 
     // in der Schleife multiplizieren wir jedesmal
     // die erste Eingabe zum Ergebnis dazu
