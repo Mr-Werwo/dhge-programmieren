@@ -19,7 +19,7 @@ int main(void)
       3 * SDL_X_SIZE / 4,  // End-X-Koordinate, 0 ... SDL_X_SIZE - 1
       3 * SDL_Y_SIZE / 4,  // End-Y-Koordinate, 0 ... SDL_Y_SIZE - 1
       255,                 // Farb-Rot-Anteil, 0 ... 255
-      0,                   // Farb-Grün-Anteil, 0 ... 255
+      0,                   // Farb-Grï¿½n-Anteil, 0 ... 255
       0);                  // Farb-Blau-Anteil, 0 ... 255
     sdlDrawLine(
       SDL_X_SIZE / 4,      // Anfangs-X-Koordinate, 0 ... SDL_X_SIZE - 1
@@ -27,7 +27,7 @@ int main(void)
       3 * SDL_X_SIZE / 4,  // End-X-Koordinate, 0 ... SDL_X_SIZE - 1
       SDL_Y_SIZE / 4,      // End-Y-Koordinate, 0 ... SDL_Y_SIZE - 1
       0,                   // Farb-Rot-Anteil, 0 ... 255
-      255,                 // Farb-Grün-Anteil, 0 ... 255
+      255,                 // Farb-Grï¿½n-Anteil, 0 ... 255
       0);                  // Farb-Blau-Anteil, 0 ... 255
 
   sdlUpdate();          // zeige die gezeichneten Striche wirklich an

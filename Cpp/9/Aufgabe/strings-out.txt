@@ -1,0 +1,8 @@
+Ist 'nix' leer? Ja!
+'Birnen' sind nicht leer.
+'Äpfel' und 'Birnen' sind verschieden.
+'Birnen' sind kleiner als 'Kompott'
+'Kompott' ist größer als 'Birnen'
+'Äpfel' plus 'Birnen' sind 'ÄpfelBirnen'.
+Sind es wirklich 'ÄpfelBirnen'? Ja!
+Und jetzt gibt es 'ÄpfelBirnenKompott'.

@@ -1,0 +1,10 @@
+a == b: gleich
+a: 10 1 1 1 1 , b: 1 11 1 1 1 , c: 1 1 12 1 1 
+a: 20 2 2 2 2 , b: 4 14 4 4 4 , c: -19 9 -1 -1 -1 
+a == b: ungleich
+kurz == lang: ungleich
+kurz + lang: 16.5 19.8 
+lang + kurz: 16.5 19.8 
+kurz: 6.6 9.9 , lang: 9.9 9.9 9.9 9.9 9.9 
+lang += kurz: 16.5 19.8 
+kurz += tmp: 16.5 9.9 
